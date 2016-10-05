@@ -5,7 +5,6 @@ body {
 #header_menu li a {
   border-top: 3px solid #e7e7e7;
   padding-top: 38px;
-  padding-bottom: 41px;
   font-size: 1.3em;
   color: #414141;
 }
@@ -61,7 +60,6 @@ nav.reduced .navbar-brand img {
 
 nav.reduced #header_menu li a {
   padding-top: 12px;
-  padding-bottom: 15px;
 }
 
 nav.reduced .navbar-toggle {
@@ -74,18 +72,28 @@ main {
 }
 
 footer {
-/*  background-image: url("images/footer_bg.png"); */
   background-color: #2e3032;
   color: #fff;
   height: 300px;
 }
 
-footer p {
-  text-align: center;
+footer .footer_heading {
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 footer ul {
-  margin-left: 30px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #dadada;
 }
 
 @media (max-width: 991px) {
@@ -100,7 +108,6 @@ footer ul {
 
   #header_menu li a {
     padding-top: 12px;
-    padding-bottom: 15px;
   }
 
   #header_menu li a:hover {
