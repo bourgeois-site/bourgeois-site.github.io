@@ -76,10 +76,6 @@ main .heading {
   padding: 40px 0;
 }
 
-main .heading h1 {
-  font-size: 48px !important;
-}
-
 main .heading h1, main .heading h2 {
   margin-top: 0;
 }
@@ -97,14 +93,25 @@ main #services {
 }
 
 main #customers {
-  /* not implemented yet */
-  height: 400px;
   background-color: #fff;
+  padding-bottom: 40px;
+}
+
+main #customers .customer_logo {
+  text-align: center;
+}
+
+main #customers .thumbnail {
+  overflow: hidden;
+}
+
+main #customers img {
+  min-width: 100%;
 }
 
 main #call_form {
-  padding-bottom: 40px;
   background: linear-gradient(to bottom, #b96835, #bf8418);
+  padding-bottom: 40px;
   color: #fff;
 }
 
