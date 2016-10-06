@@ -3,15 +3,15 @@ body {
 }
 
 #header_menu li a {
-  border-top: 3px solid #e7e7e7;
-  padding-top: 38px;
+  padding-top: 41px;
+  padding-bottom: 42px;
   font-size: 1.3em;
   color: #414141;
 }
 
 #header_menu li a:hover {
-  border-color: #cb0000;
   color: #000;
+  background-color: #d8d8d8;
 }
 
 nav {
@@ -59,7 +59,8 @@ nav.reduced .navbar-brand img {
 }
 
 nav.reduced #header_menu li a {
-  padding-top: 12px;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 
 nav.reduced .navbar-toggle {
@@ -74,17 +75,15 @@ main {
 footer {
   background-color: #2e3032;
   color: #fff;
-  height: 300px;
 }
 
 footer .footer_heading {
-  padding-left: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 footer ul {
-  padding-left: 30px;
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -94,6 +93,18 @@ footer a {
 
 footer a:hover {
   color: #dadada;
+}
+
+footer #copyright {
+  margin-bottom: 10px;
+}
+
+footer .glyphicon {
+  margin-right: 5px;
+}
+
+footer .contact{
+  margin-top: 20px;
 }
 
 @media (max-width: 991px) {
@@ -108,6 +119,7 @@ footer a:hover {
 
   #header_menu li a {
     padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   #header_menu li a:hover {
