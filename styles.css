@@ -85,9 +85,21 @@ main .heading h2 {
 }
 
 main #jumbotron {
-  /* not implemented yet */
-  height: 700px;
-  background-color: #fff;
+  background-image: url('images/jumbotron_bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #jumbotron .jumbotron .col-md-6 {
+  padding: 5px;
+}
+
+main #jumbotron .jumbotron {
+  margin-top: 150px;
+  background: inherit !important;
+  text-align: center;
 }
 
 main #services {
