@@ -121,6 +121,9 @@ main #customers .customer_logo {
 
 main #customers .thumbnail {
   overflow: hidden;
+  /* remove later */
+  padding-top: 70px;
+  background-color: #e7e7e7;
 }
 
 main #customers img {
