@@ -18,4 +18,15 @@ $(document).ready(function() {
       $('header nav').removeClass('reduced');
     }
   });
+
+  $('main #services img').mouseenter(function() {
+    var target = $(this).prev();
+    target.css('color', '#000');
+    target.css('text-shadow', 'none');
+  });
+  $('main #services img').mouseleave(function() {
+    var target = $('main #services a span')
+    target.css('color', '#fff');
+    target.css('text-shadow', '0 1px 1px #000');
+  });
 });
