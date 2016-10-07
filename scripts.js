@@ -1,7 +1,6 @@
-var roundThumbnail = function() {
-  var element = $('main #customers .thumbnail');
+var setHeight = function() {
+  var element = $('main #customers .customer_logo');
   element.css('height', element.css('width'));
-  element.css('border-radius', '50%');
 }
 
 var setHeightJumbotron = function() {
@@ -11,7 +10,7 @@ var setHeightJumbotron = function() {
 
 $(document).ready(function() {
   setHeightJumbotron();
-  roundThumbnail();
+  setHeight();
   $(window).scroll(function() {
     if($(this).scrollTop() > 50) {
       $('header nav').addClass('reduced');
