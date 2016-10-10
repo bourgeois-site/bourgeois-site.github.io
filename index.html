@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="scripts.js" ></script>
   </head>
   <body>
@@ -35,7 +36,7 @@
 		<a href="/"><small>ВЫПОЛНЕННЫЕ РАБОТЫ</small></a>
 	      </li>
 	      <li>
-		<a href="/"><small>КОНТАКТЫ</small></a>
+		<a href="#" data-toggle="modal" data-target="#contacts"><small>КОНТАКТЫ</small></a>
 	      </li>
 	    </ul>
 	  </div>
@@ -203,6 +204,50 @@
 		</div>
 		<button class="btn btn-warning btn-block" onclick="alert('Еще не готово))')">ОТПРАВИТЬ ЗАЯВКУ</button>
 	      </form>
+	    </div>
+	  </div>
+	</div>
+      </section>
+      <section id="contacts" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	      </button>
+	      <h1 class="h3 text-center">Контактная информация</h1>
+	    </div>
+	    <div class="modal-body">
+	      <div class="row" id="dzer_contact">
+		<div class="contact_info col-md-4">
+		  <h2 class="h3">г. Дзержинск</h2>
+		  <h3 class="h4">Адрес:</h3>
+		  <p>ул. Грибоедова 22/11</p>
+		  <h3 class="h4">Тел.:</h3>
+		  <p>+7 (8313) 23-46-46</p>
+		  <p>+7 (904) 782-65-46</p>
+		  <h3 class="h4">Часы работы:</h3>
+		  <p>Пн-Пт - 9:00-18:00</p>
+		  <p>Сб-Вс - 10:00-16:00</p>
+		</div>
+		<div id="dzer_map" class="col-md-8">
+		</div>
+	      </div>
+	      <div class="row" id="nn_contact">
+		<div class="contact_info col-md-4">
+		  <h2 class="h3">г. Нижний Новгород</h2>
+		  <h3 class="h4">Адрес:</h3>
+		  <p>пр. Бусыгина 42</p>
+		  <h3 class="h4">Тел.:</h3>
+		  <p>+7 (831) 230-36-36</p>
+		  <p>+7 (902) 306-46-36</p>
+		  <h3 class="h4">Часы работы:</h3>
+		  <p>Пн-Пт - 9:00-18:00</p>
+		  <p>Сб-Вс - 10:00-16:00</p>
+		</div>
+		<div id="nn_map" class="col-md-8">
+		</div>
+	      </div>
 	    </div>
 	  </div>
 	</div>

@@ -44,4 +44,36 @@ $(document).ready(function() {
     var img = $(this).find('img');
     img.css('opacity', '1.0');
   });
+
+  ymaps.ready(function() {
+    var dzerCoord = [56.237328, 43.448866];
+    var nnCoord = [56.269391, 43.888957];
+    var zoomLevel = 17;
+
+    var dzerMap = new ymaps.Map("dzer_map", {
+      center: dzerCoord,
+      zoom: zoomLevel
+    });
+    var dzerPlacemark = new ymaps.Placemark(dzerCoord, {
+      hintContent: "Студия \"Буржуа\"",
+      balloonContent: "<h4>Студия \"Буржуа\"</h4>" +
+	"<p>Ремонт квартир и ванных комнат, отделочные работы</p>"
+    }, {
+      preset: 'islands#redGlyphIcon',
+    });
+    dzerMap.geoObjects.add(dzerPlacemark);
+
+    var nnMap = new ymaps.Map("nn_map", {
+      center: nnCoord,
+      zoom: zoomLevel
+    });
+    var nnPlacemark = new ymaps.Placemark(nnCoord, {
+      hintContent: "Студия \"Буржуа\"",
+      balloonContent: "<h4>Студия \"Буржуа\"</h4>" +
+	"<p>Ремонт квартир и ванных комнат, отделочные работы</p>"
+    }, {
+      preset: 'islands#redGlyphIcon',
+    });
+    nnMap.geoObjects.add(nnPlacemark);
+  })
 });

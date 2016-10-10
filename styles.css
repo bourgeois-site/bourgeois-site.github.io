@@ -164,6 +164,26 @@ main #call_form input, main #call_form textarea {
   margin-bottom: 15px;
 }
 
+main #contacts #dzer_contact {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dadada;
+  margin-left: 20px;
+}
+
+main #contacts p {
+  margin-left: 30px;
+  font-size: 1.1em;
+}
+
+main #contacts #nn_contact {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+main #contacts #dzer_map, main #contacts #nn_map {
+  height: 300px;
+}
+
 /*** footer styles ***/
 
 footer {
