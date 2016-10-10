@@ -8,8 +8,16 @@ var setHeightJumbotron = function() {
   $('main #jumbotron').css('height', String(windowHeight) + "px");
 }
 
+var cutServiceDescriptions = function() {
+  $('main #services .service_description').each(function() {
+    var text = $(this).text();
+    $(this).text(text.substring(0, 300) + "...");
+  })
+}
+
 $(document).ready(function() {
   $('main #services .service_description').slideUp(300);
+  cutServiceDescriptions();
   setHeightJumbotron();
   setHeight();
   $(window).scroll(function() {
