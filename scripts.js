@@ -9,6 +9,7 @@ var setHeightJumbotron = function() {
 }
 
 $(document).ready(function() {
+  $('main #services .service_description').slideUp(300);
   setHeightJumbotron();
   setHeight();
   $(window).scroll(function() {
@@ -19,14 +20,20 @@ $(document).ready(function() {
     }
   });
 
-  $('main #services img').mouseenter(function() {
-    var target = $(this).prev();
-    target.css('color', '#000');
-    target.css('text-shadow', 'none');
+  $('main #services .service').mouseenter(function() {
+    var caption = $(this).find('.service_caption');
+    caption.css('color', '#000');
+    caption.css('text-shadow', 'none');
+    caption.children('.service_description').slideDown(300);
+    var img = $(this).find('img');
+    img.css('opacity', '0.1');
   });
-  $('main #services img').mouseleave(function() {
-    var target = $('main #services a span')
-    target.css('color', '#fff');
-    target.css('text-shadow', '0 1px 1px #000');
+  $('main #services .service').mouseleave(function() {
+    var caption = $(this).find('.service_caption');
+    caption.css('color', '#fff');
+    caption.css('text-shadow', '0 1px 1px #000');
+    caption.children('.service_description').slideUp(300);
+    var img = $(this).find('img');
+    img.css('opacity', '1.0');
   });
 });

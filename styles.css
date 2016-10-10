@@ -117,20 +117,16 @@ main #services img {
   transition: opacity 0.5s;
 }
 
-main #services img:hover {
-  opacity: 0.1;
-}
-
 main #services .col-md-4 {
   padding: 0 !important;
   overflow: hidden;
-  height: 250px;
+  height: 200px;
 }
 
-main #services a span {
+main #services .service_caption {
   position: absolute;
   text-align: center;
-  top: 20%;
+  bottom: 5%;
   left: 10%;
   width: 80%;
   color: #fff;
